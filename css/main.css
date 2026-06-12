@@ -1,0 +1,94 @@
+:root {
+            --primary: #000000;
+            --on-primary: #ffffff;
+            --secondary: #515f74;
+            --surface-container-lowest: #ffffff;
+            --surface-container-low: #f2f4f6;
+            --surface-container-high: #e6e8ea;
+            --surface: #f7f9fb;
+            --on-surface: #191c1e;
+            --on-surface-variant: #45464d;
+            --slate-border: #E2E8F0;
+            --tertiary: #000000;
+            --tertiary-container: #0b1c30;
+            --whatsapp-green: #25D366;
+            --primary-fixed-dim: #bec6e0;
+            --surface-tint: #565e74;
+            
+            --margin-sm: 8px;
+            --margin-md: 16px;
+            --margin-lg: 32px;
+            --gutter: 24px;
+            --section-gap-mobile: 64px;
+            --section-gap-desktop: 120px;
+            --container-max: 1200px;
+}
+
+a {
+            text-decoration: none;
+            color: inherit;
+}
+
+.navbar {
+    background-color: var(--surface-container-lowest);
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid var(--slate-border);
+    width: 100%;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+}
+
+.brand {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+
+.nav-link {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--secondary);
+    margin: 10px;
+    transition: color 0.2s, opacity 0.2s;
+}
+
+.nav-link.active {
+    color: var(--primary);
+    font-weight: 700;
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 5px;
+}
+
+.nav-link:hover {
+    color: var(--primary);
+    font-weight: 200;
+    opacity: 0.8;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--on-primary);
+    padding: var(--margin-sm) var(--margin-lg);
+    border-radius: 4px;
+    padding: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: background-color 0.2s, transform 0.1s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-primary:hover {
+    background-color: var(--tertiary-container);
+    transform: scale(1.05);
+}
